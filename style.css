@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgb(215, 255, 248) 11%, rgba(179,239,255,1) 31%, rgba(106,161,171,1) 53%, rgba(9,45,55,1) 79%);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px; 
+    text-align: center;
+}
+
+footer p {
+  background-color: #FFF8D7;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+
+  /* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
+
+  
+  /* Start Landing Page */
+.pagina header {
+    min-height: 80px;
+    display: flex;
+}
+  
+@media (max-width: 767px) {
+    .pagina header {
+      min-height: auto;
+      display: initial;
+    }
+}
+
+.pagina header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .pagina header .container {
+      flex-direction: column;
+      justify-content: center;
+    }
+}
+
+.pagina header .logo {
+    color: #5d5d5d;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+@media (max-width: 767px) {
+    .pagina header .logo {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+}
+
+
+/* a distancia entre a imagem e o texto */
+.pagina .content .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 140px;
+    min-height: calc(100vh - 80px);
+}
+
+@media (max-width: 767px) {
+    .pagina .content .container {
+      gap: 100px;
+      min-height: calc(100vh - 101px);
+      justify-content: center;
+      flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 767px) {
+    .pagina .content .info {
+      text-align: center;
+      margin-bottom: 15px 
+    }
+}
+
+
+/* cor do titulo */
+.pagina .content .info h1 {
+    color: #800101;
+    font-size: 32px;
+}
+
+/* cor do texto */
+.pagina .content .info p {
+    margin: 0;
+    line-height: 1.9;
+    font-size: 18px;
+    color: #b96e6e;
+}
+
+/* cor do botão */
+.pagina .content .info button {
+    border: 0;
+    border-radius: 20px;
+    padding: 12px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #b90b0b;
+}
+
+
+/* edita as imagens */
+.pagina .content .image img {
+    max-width: 80%;
+    border-radius: 50%;
+    padding: 20px;
+    filter: drop-shadow( 8px 8px 10px #530404); /*sombra na imagem*/
+}
+
+
+.pagina .content .image2 img {
+    max-width: 120%;
+    filter: drop-shadow( 8px 8px 10px #333); /*sombra na imagem*/
+}
+
+
+
+
+
+/* livro aberto do roda pé*/
+
+.custom-shape-divider-bottom-1704396899 {
+    position:relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1704396899 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 117px;
+}
+
+.custom-shape-divider-bottom-1704396899 .shape-fill {
+    fill: #FFF8D7;
+}
